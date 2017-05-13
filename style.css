@@ -39,13 +39,6 @@
   font-style: normal;
   font-weight: normal; }
 
-@font-face {
-  font-family: "GosT type A";
-  src: url("../font/GosTTypeARegular.eot");
-  src: url("../font/GosTTypeARegular.eot?#iefix") format("embedded-opentype"), url("../font/GosTTypeARegular.woff") format("woff"), url("../font/GOST type A.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
 body {
   background: #21303D;
   font-family: 'GothamProRegular', sans-serif;
@@ -1222,10 +1215,11 @@ button.btn_more {
     width: 120px; }
   .doc_developments .flex_sb div:nth-child(5) {
     width: 75px; }
-    .doc_developments .flex_sb div:nth-child(5) input {
-      background-image: url("../img/rocet.png");
-      background-repeat: no-repeat;
-      background-position: top 1px right; }
+
+.input_last {
+  background-image: url("img/rocet.png");
+  background-repeat: no-repeat;
+  background-position: top 1px right; }
 
 .doc_developments_add .flex_sb div:nth-child(1) {
   width: 170px; }
@@ -1257,6 +1251,36 @@ button.btn_more {
     line-height: 31px; }
     .content_docs .btn_more:hover {
       text-decoration: none; }
+  .content_docs .in_calendar {
+    display: block;
+    color: #37669d;
+    font-size: 10px; }
+    .content_docs .in_calendar:before {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background-color: #00ff00;
+      -webkit-border-radius: 100%;
+              border-radius: 100%;
+      margin-right: 4px; }
+  .content_docs .about_event {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 16px; }
+    .content_docs .about_event div {
+      width: 220px; }
+    .content_docs .about_event b {
+      font-size: 18px;
+      font-family: "GothamProBold";
+      display: block;
+      padding-bottom: 8px; }
 
 .content_docs_add {
   padding: 30px 20px; }
@@ -1313,20 +1337,6 @@ button.btn_more {
   .developments_table_second tr td:last-child a {
     margin-right: 3px; }
 
-.content_docs_calendar .in_calendar {
-  display: block;
-  color: #37669d;
-  font-size: 10px; }
-  .content_docs_calendar .in_calendar:before {
-    content: '';
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    background-color: #00ff00;
-    -webkit-border-radius: 100%;
-            border-radius: 100%;
-    margin-right: 4px; }
-
 .content_docs_calendar p {
   font-size: 18px;
   font-family: "GothamProBold"; }
@@ -1338,20 +1348,99 @@ button.btn_more {
     text-transform: uppercase;
     padding: 0 3px; }
 
-.content_docs_calendar .about_event {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 16px; }
-  .content_docs_calendar .about_event div {
-    width: 220px; }
-  .content_docs_calendar .about_event b {
-    font-size: 18px;
+.content_docs_main h2 {
+  margin: 0 0 20px;
+  font-size: 18px; }
+
+.content_docs_main .data_event {
+  position: relative;
+  margin-bottom: 20px; }
+  .content_docs_main .data_event .data_number {
+    font-size: 21px;
     font-family: "GothamProBold";
+    padding-top: 10px;
+    color: #4f8bce;
+    font-weight: bold; }
+    .content_docs_main .data_event .data_number span {
+      background: #F24941;
+      color: #fff;
+      font-family: "GothamProRegular";
+      font-size: 13px;
+      text-transform: uppercase;
+      padding: 0 3px; }
+  .content_docs_main .data_event .right {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 25px;
+    text-align: center; }
+    .content_docs_main .data_event .right a {
+      margin: 2px 0;
+      display: inline-block; }
+
+.content_docs_main .prev_event {
+  font-size: 18px;
+  font-family: "GothamProBold";
+  padding-bottom: 15px; }
+  .content_docs_main .prev_event p {
+    width: 360px;
+    float: right; }
+  .content_docs_main .prev_event span {
+    font-family: "GothamProRegular";
+    color: #4f8bce;
+    font-size: 14px;
     display: block;
-    padding-bottom: 8px; }
+    margin-top: 7px; }
+  .content_docs_main .prev_event:after {
+    display: block;
+    content: '';
+    clear: both; }
+  .content_docs_main .prev_event img {
+    float: left; }
+
+.content_docs_main .docs_list {
+  padding: 35px 0 0;
+  font-size: 14px;
+  line-height: 1; }
+  .content_docs_main .docs_list h3 {
+    font-size: 18px;
+    padding-bottom: 35px;
+    margin: 0; }
+  .content_docs_main .docs_list span {
+    font-size: 11px;
+    color: #363636; }
+  .content_docs_main .docs_list ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+    padding: 0 0 7px; }
+    .content_docs_main .docs_list ul li {
+      width: 210px;
+      padding-left: 55px;
+      position: relative; }
+      .content_docs_main .docs_list ul li:nth-child(1), .content_docs_main .docs_list ul li:nth-child(2) {
+        padding-bottom: 6px;
+        border-bottom: 1px solid #D1D1D1;
+        margin-bottom: 13px; }
+      .content_docs_main .docs_list ul li .img_doc {
+        position: absolute;
+        top: 1px;
+        left: 0; }
+
+.docs_list_btns {
+  padding: 30px 0 10px;
+  overflow: hidden; }
+  .docs_list_btns .btn_more {
+    width: 48%;
+    display: inline-block; }
+    .docs_list_btns .btn_more:last-child {
+      float: right; }
