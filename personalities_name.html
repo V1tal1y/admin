@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- css datepicker -->
+	<link href="js/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- header -->
+<header class="header"></header>
+<!-- / header -->
+		
+	
+<!-- wrapper -->
+<div class="wrapper">
+	    <!-- main -->
+	    <div class="main">
+	
+	        <!-- Sidebar left -->
+	        <div class="sidebar">
+	        	<div class="sidebar-Person">
+	        	<div class="sidebar-Person__img"></div>
+	        	   <div class="wrap-ident">
+	        	   	 <span class="sidebar-Person__surname">Константинопольский</span>
+	        	   	 <span class="sidebar-Person__iniN">Игорь</span>
+	        	   	<span class="sidebar-Person__iniP">Владимирович</span>
+	        	   	<span class="sidebar-Person__profi">Пресс-служба</span>
+	        	   </div>
+	        	</div>
+	        	<div class="sidebar-userMenu">
+	        	    <ul class="userMenu">
+	        	        <li>
+	        	            <div class="userMenu__item">Добавить новости</div>
+	        	        </li>
+	        	        <li>
+	        	            <div class="userMenu__item">Добавить документ</div>
+	        	        </li>
+	        	        <li>
+	        	            <div class="userMenu__item">Добавить вызов</div>
+	        	        </li>
+	        	        <li>
+	        	            <div class="userMenu__item">Добавить событие</div>
+	        	        </li>
+	        	        <li>
+	        	            <div class="userMenu__item">Добавить персоналию</div>
+	        	        </li>
+	        	    </ul>
+	        	</div>
+	        	<div class="sidebar-navMenu">
+	        	    <ul class="navMenu">
+	        	        <li><a href="">Главная</a>
+	        	            <ul>
+	        	                <li><a href="">Инфобанер</a></li>
+	        	                <li><a href="">Атрибутика</a></li>
+	        	            </ul>
+	        	        </li>
+	        	        <li><a href="">О федерации</a>
+	        	            <ul>
+	        	                <li><a href="">Официальные документы</a></li>
+	        	                <li><a href="">Сборные</a></li>
+	        	            </ul>
+	        	        </li>
+	        	        <li><a href="">Деятельность</a>
+	        	            <ul>
+	        	                <li><a href="">Межрегиональные бюро</a></li>
+	        	                <li><a href="">Судьекты</a></li>
+	        	                <li><a href="">Школы бокса</a></li>
+	        	                <li><a href="">Правила и положения</a></li>
+	        	                <li><a href="">Чемпионы</a></li>
+	        	                <li><a href="">Тренерский состав</a></li>
+	        	                <li><a href="">Судейская коллегия</a></li>
+	        	            </ul>
+	        	        </li>
+	        	        <li><a href="">События</a>
+	        	            <ul>
+	        	                <li><a href="">Календарь</a></li>
+	        	                <li><a href="">Вызовы</a></li>
+	        	                <li><a href="">Судейские отчеты</a></li>
+	        	            </ul>
+	        	        </li>
+	        	        <li><a href="">Пресс-центр</a>
+	        	            <ul>
+	        	                <li><a href="">Новости</a></li>
+	        	                <li><a href="">Сми о нас</a></li>
+	        	                <li><a href="">Медиагалерея</a></li>
+	        	            </ul>
+	        	        </li>
+	        	        <li><a href="">Сотрудничество</a>
+	        	            <ul>
+	        	                <li><a href="">Форматы сотрудничества</a></li>
+	        	            </ul>
+	        	        </li>
+	        	    </ul>
+	        	</div>
+	        </div><!-- / Sidebar left -->
+	
+	        <!-- Content  -->
+	        <div class="mainContent">
+	            <div class="filter_panel">
+	                <h2>Информационная панель</h2>
+					<div class="dropdown dropdown_name item_dropdown">
+						 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Имена <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+				            <li><a href="#">Действие</a></li>
+				            <li><a href="#">Другое действие</a></li>
+				            <li><a href="#">Что-то еще</a></li>
+				            <li class="divider"></li>
+				            <li><a href="#">Отдельная ссылка</a></li>
+				            <li class="divider"></li>
+				            <li><a href="#">Еще одна отдельная ссылка</a></li>
+				         </ul>
+					</div>
+	            </div>
+	            <div class="type_panel filter_panel">
+	                <h2>Выберите тип записи</h2>
+					<div class="type_record">
+						<div class="type_record_item">Спортсмен</div>
+						<div class="type_record_item">Тренер</div>
+						<div class="type_record_item">Другой</div>
+					</div>
+	            </div>
+
+	            <!-- content -->
+	            <div class="content">
+	                <div class="content_center">
+	                	<div class="title_person">
+		                	<h2><span>Фамилия</span> имя отчество</h2>
+							<div class="dropdown item_dropdown">
+								 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пол <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+						            <li><a href="#">Действие</a></li>
+						            <li><a href="#">Другое</a></li>
+						            <li><a href="#">Что-то</a></li>
+						         </ul>
+							</div>
+		                </div>
+		                <div class="img_person">
+		                	<img src="img/img_none.svg" alt="">
+		                	<a href="#" class="orientation"></a>
+		                </div>
+		                <div class="person_info">
+		                	<div class="left">
+		                		<label>
+		                			<b>Дата рождения</b>
+		                			<input type="text" value="25.03.1990">
+		                		</label>
+		                		<label>
+		                			<b>Спортзвание</b>
+		                			<input type="text" value="КМС">
+		                		</label>
+		                		<label>
+		                			<b>Команда</b>
+		                			<input type="text" value="Динамо">
+		                		</label>
+		                		<label>
+		                			<b>Личный тренер</b>
+		                			<textarea class="textarea">Батуев Б.М.,
+Рагимов А.Ф.,
+Данилов СМ.</textarea>
+		                		</label>
+		                		<label>
+		                			<b>Высший р-т сезона на МС</b>
+		                			<input type="text" value="Зм ОИ">
+		                		</label>
+		                	</div>
+		                	<div class="right">
+		                		<label>
+		                			<b>Состав</b>
+		                			<input type="text" value="Основной">
+		                		</label>
+		                		<label>
+		                			<b>Cборная</b>
+		                			<input type="text" value="Юноши(15-16)">
+		                		</label>
+		                		<label>
+		                			<b>Программа</b>
+		                			<input type="text" value="48 кг">
+		                		</label>
+		                		<label>
+		                			<b>ФО/Субъект РФ/Город</b>
+		                			<textarea class="textarea">ЦФО, СФО
+Ростовская область,
+Республика Крым
+Симферополь</textarea>
+		                		</label>
+		                		<label>
+		                			<b>Высший р-т сезона в РФ</b>
+		                			<input type="text" value="2м ЧР">
+		                		</label>
+		                	</div>
+		                </div>
+		                <div class="biography">
+		                	<h2>Биография</h2>
+		                	<textarea class="textarea"></textarea>
+		                	<input type="submit" value="Сохранить">
+		                </div>
+	                </div>
+
+	               
+	            </div><!-- / content -->
+]
+	        </div>
+	        <!-- mainContent -->
+	    </div>
+	    <!-- / main -->
+	
+	
+	
+	
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- jQuery UI -->
+	    <script src="js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+	    <script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+		
+	<!-- start custom js -->
+		<script src="js/start.js"></script>
+	
+	</div><!-- wrapper -->
+	</body>
+</html>

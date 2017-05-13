@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="editPage.css">
+    <!-- css datepicker -->
+    <link href="js/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header"></header>
+    <!-- / header -->
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- main -->
+        <div class="main">
+            <!-- Sidebar left -->
+            <div class="sidebar">
+                <div class="sidebar-Person">
+                    <div class="sidebar-Person__img"></div>
+                    <div class="wrap-ident">
+                        <span class="sidebar-Person__surname">Константинопольский</span>
+                        <span class="sidebar-Person__iniN">Игорь</span>
+                        <span class="sidebar-Person__iniP">Владимирович</span>
+                        <span class="sidebar-Person__profi">Пресс-служба</span>
+                    </div>
+                </div>
+                <div class="sidebar-userMenu">
+                    <ul class="userMenu">
+                        <li>
+                            <div class="userMenu__item">Добавить новости</div>
+                        </li>
+                        <li>
+                            <div class="userMenu__item">Добавить документ</div>
+                        </li>
+                        <li>
+                            <div class="userMenu__item">Добавить вызов</div>
+                        </li>
+                        <li>
+                            <div class="userMenu__item">Добавить событие</div>
+                        </li>
+                        <li>
+                            <div class="userMenu__item">Добавить персоналию</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-navMenu">
+                    <ul class="navMenu">
+                        <li><a href="">Главная</a>
+                            <ul>
+                                <li><a href="">Инфобанер</a></li>
+                                <li><a href="">Атрибутика</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">О федерации</a>
+                            <ul>
+                                <li><a href="">Официальные документы</a></li>
+                                <li><a href="">Сборные</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Деятельность</a>
+                            <ul>
+                                <li><a href="">Межрегиональные бюро</a></li>
+                                <li><a href="">Судьекты</a></li>
+                                <li><a href="">Школы бокса</a></li>
+                                <li><a href="">Правила и положения</a></li>
+                                <li><a href="">Чемпионы</a></li>
+                                <li><a href="">Тренерский состав</a></li>
+                                <li><a href="">Судейская коллегия</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">События</a>
+                            <ul>
+                                <li><a href="">Календарь</a></li>
+                                <li><a href="">Вызовы</a></li>
+                                <li><a href="">Судейские отчеты</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Пресс-центр</a>
+                            <ul>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Сми о нас</a></li>
+                                <li><a href="">Медиагалерея</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Сотрудничество</a>
+                            <ul>
+                                <li><a href="">Форматы сотрудничества</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- / Sidebar left -->
+            <!-- Content  -->
+            <div class="mainContent smaller-column userTemplate">
+                <div class="filter_panel">
+                    <h2>Информационная панель</h2>
+                    <ul class="">
+                        <li class="dropdown itemSection">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Раздел</span> <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Новости/Главная</a></li>
+                                <li><a href="#">В мире бокса</a></li>
+                                <li><a href="#">Анонсы</a></li>
+                                <li><a href="#">История российского бокса</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">СМИ о нас</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown itemCategory">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Рубрика</span> <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Новости Федерации</a></li>
+                                <li><a href="#">Новости регионов</a></li>
+                                <li><a href="#">Новости российского бокса</a></li>
+                                <li><a href="#">Новости мирового бокса</a></li>
+                                <li><a href="#">Эксклюзив</a></li>
+                                <li><a href="#">Анонсы</a></li>
+                                <li><a href="#">Олимпиада</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown itemStatus">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Статус</span> <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Действие</a></li>
+                                <li><a href="#">Другое действие</a></li>
+                                <li><a href="#">Что-то еще</a></li>
+                                <li><a href="#">Элемент</a></li>
+                                <li><a href="#">Элемент</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <label>
+					    <input class="checkbox" checked="checked" type="checkbox" name="">
+					    <span class="checkbox-custom"></span>
+					    <span class="label">Дублировать в СМИ о нас</span>
+					</label>
+                </div>
+                <div class="checkTemplate">
+                    <h2>Шаблон</h2>
+                    <ul>
+                        <li class="vers1"><img src="img/vers1.png" alt=""></li>
+                        <li class="vers2"><img src="img/vers2.png" alt=""></li>
+                        <li class="vers3 activeVers"><img src="img/vers3.png" alt=""></li>
+                        <li class="vers4"><img src="img/vers4.png" alt=""></li>
+                    </ul>
+                </div>
+                <!-- content -->
+                <div class="content">
+
+					<!-- content__article v1 -->
+					<div class="content__article templateVers1">
+    <div class="buton-removeArticle"></div>
+    <div class="indicateStatus">
+        <div class="status archive">Черновик</div>
+        <div class="status draft">Опубликуется:</div>
+    </div>
+    <!-- begin form -->
+    <form action="">
+        <div class="content-area">
+            <!-- <div class="controlPanel-right">
+                                    <div class="controlPanel-right__item">З</div>
+                                    <div class="controlPanel-right__item">Ж</div>
+                                    <div class="controlPanel-right__item">К</div>
+                                    <div class="controlPanel-right__item">Ч</div>
+                                    <div class="controlPanel-right__item"></div>
+                                    <div class="controlPanel-right__item"></div>
+                                </div> -->
+            <div class="content-area__date">
+                <input type="datetime" value="28/05/2017" size="10">
+                <span class="category">Новости, Всероссийские турниры, Регионы</span>
+            </div>
+            <div class="content-area__title-area">
+                <h1 contenteditable="true">
+                                    В Оренбурге готовятся провести Чемпионат России по боксу
+                                    </h1>
+            </div>
+            <div class="content-area__photo-leftTop">
+                <div class="control-panel">
+                    <div class="transitButton"></div>
+                    <div class="removeButton"></div>
+                    <!-- <div class="redactButton"></div> -->
+                </div>
+                <input type="file" name="photo" accept="image/*,image/jpeg" />
+                <!-- <img src="img/test-img.png" alt=""> -->
+            </div>
+            <p class="innerText" contenteditable="true">
+                Оренбургская область впервые в истории региона встретит участников и гостей Чемпионата России по боксу среди мужчин. Соревнования состоятся с 22 по 29 ноября в большом зале спортивно-культурного комплекса «Оренбуржье».
+                <br>
+                <br> Протокол За восемь соревновательных дней канаты оренбургского ринга перешагнут около 300 участников со всех субъектов Российской Федерации. Это чемпионы России, Европы, мира, участники Олимпийских игр. Оренбургскую область представят сильнейшие боксёры Орска, Новотроицка, Бузулука и Оренбурга. — Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса</p>
+            <p class="innerText" contenteditable="true">Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса. Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса. Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса. Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса.</p>
+            <ul class="innerItem">
+                <li class="dropdown itemSection">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Источник</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Федерация бокса России</a></li>
+                        <li><a href="#">Министерство спорта РФ</a></li>
+                        <li><a href="#">Олимпийский комитет РФ</a></li>
+                    </ul>
+                </li>
+                <li class="pushSource">
+                    <input type="text" size="32">
+                </li>
+            </ul>
+            <div class="content-area__submit">
+                <input type="submit" value="Сохранить" />
+                <input type="submit" value="Предосмотр" />
+                <input type="submit" value="Опубликовать" />
+            </div>
+        </div>
+        <!-- / content-area -->
+</div>
+                    <!-- / content__article v1 -->
+
+                    <!-- content__article v2 -->
+                    <div class="content__article templateVers2">
+    <div class="buton-removeArticle"></div>
+    <div class="indicateStatus">
+        <div class="status archive">Черновик</div>
+        <div class="status draft">Опубликуется:</div>
+    </div>
+    <!-- begin form -->
+    <form action="">
+        <div class="content-area">
+            <!-- <div class="controlPanel-right">
+                                    <div class="controlPanel-right__item">З</div>
+                                    <div class="controlPanel-right__item">Ж</div>
+                                    <div class="controlPanel-right__item">К</div>
+                                    <div class="controlPanel-right__item">Ч</div>
+                                    <div class="controlPanel-right__item"></div>
+                                    <div class="controlPanel-right__item"></div>
+                                </div> -->
+            <div class="content-area__date">
+                <input type="datetime" value="28/05/2017" size="10">
+                <span class="category">Новости, Всероссийские турниры, Регионы</span>
+            </div>
+            <div class="content-area__title-area">
+                <h1 contenteditable="true">
+                                    В Оренбурге готовятся провести Чемпионат России по боксу
+                                    </h1>
+            </div>
+            <p class="innerText" contenteditable="true">
+                Оренбургская область впервые в истории региона встретит участников и гостей Чемпионата России по боксу среди мужчин. Соревнования состоятся с 22 по 29 ноября в большом зале спортивно-культурного комплекса «Оренбуржье».
+                <br>
+                <br> Протокол За восемь соревновательных дней канаты оренбургского ринга перешагнут около 300 участников со всех субъектов Российской Федерации. Это чемпионы России, Европы, мира, участники Олимпийских игр. Оренбургскую область представят сильнейшие боксёры Орска, Новотроицка, Бузулука и Оренбурга. — Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса</p>
+            <div class="content-area__photo-video">
+                <div class="control-panel">
+                    <div class="transitButton"></div>
+                    <div class="removeButton"></div>
+                    <!-- <div class="redactButton"></div> -->
+                </div>
+                <!-- <img src="img/test-img-gorizontal.png" alt=""> -->
+                <!-- <iframe src="" frameborder="0"></iframe> -->
+                <div class="download-img">
+                    <input type="file" name="photo" accept="image/*,image/jpeg" />
+                </div>
+                <div class="download-video" data-toggle="modal" data-target="#modal-download"></div>
+            </div>
+            <p class="innerText" contenteditable="true">Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса. Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса. </p>
+            <ul class="innerItem">
+                <li class="dropdown itemSection">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Источник</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Федерация бокса России</a></li>
+                        <li><a href="#">Министерство спорта РФ</a></li>
+                        <li><a href="#">Олимпийский комитет РФ</a></li>
+                    </ul>
+                </li>
+                <li class="pushSource">
+                    <input type="text" size="32">
+                </li>
+            </ul>
+            <div class="content-area__submit">
+                <input type="submit" value="Сохранить" />
+                <input type="submit" value="Предосмотр" />
+                <input type="submit" value="Опубликовать" />
+            </div>
+        </div>
+        <!-- / content-area -->
+</div>
+                    <!-- / content__article v2 -->
+
+					<!-- content__article v3 -->
+                    <div class="content__article templateVers3 currentShow">
+                    <div class="buton-removeArticle"></div>
+                        <div class="indicateStatus">
+                            <div class="status archive">Черновик</div>
+                            <div class="status draft">Опубликуется:</div>
+                        </div>
+                        <!-- begin form -->
+                        <form action="">
+                            <div class="content-area">
+                                <!-- <div class="controlPanel-right">
+                                    <div class="controlPanel-right__item">З</div>
+                                    <div class="controlPanel-right__item">Ж</div>
+                                    <div class="controlPanel-right__item">К</div>
+                                    <div class="controlPanel-right__item">Ч</div>
+                                    <div class="controlPanel-right__item"></div>
+                                    <div class="controlPanel-right__item"></div>
+                                </div> -->
+                                <div class="content-area__date">
+                                    <input type="datetime" value="28/05/2017" size="10">
+                                    <span class="category">Новости, Всероссийские турниры, Регионы</span>
+                                </div>
+                                <div class="content-area__title-area">
+                                    <h1 contenteditable="true">
+                                    В Оренбурге готовятся провести Чемпионат России по боксу
+                                    </h1>
+                                </div>
+                                <div class="content-area__photo-leftTop">
+                                    <div class="control-panel">
+                                        <div class="transitButton"></div>
+                                        <div class="removeButton"></div>
+                                        <!-- <div class="redactButton"></div> -->
+                                    </div>
+                                    <input type="file" name="photo" accept="image/*,image/jpeg" />
+                                    <!-- <img src="img/test-img.png" alt=""> -->
+                                </div>
+                                <p class="innerText" contenteditable="true">
+                                    Оренбургская область впервые в истории региона встретит участников и гостей Чемпионата России по боксу среди мужчин. Соревнования состоятся с 22 по 29 ноября в большом зале спортивно-культурного комплекса «Оренбуржье».
+                                    <br>
+                                    <br> Протокол За восемь соревновательных дней канаты оренбургского ринга перешагнут около 300 участников со всех субъектов Российской Федерации. Это чемпионы России, Европы, мира, участники Олимпийских игр. Оренбургскую область представят сильнейшие боксёры Орска, Новотроицка, Бузулука и Оренбурга. — Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса</p>
+                                <div class="content-area__photo-video">
+                                    <div class="control-panel">
+                                        <div class="transitButton"></div>
+                                        <div class="removeButton"></div>
+                                        <!-- <div class="redactButton"></div> -->
+                                    </div>
+                                    <!-- <img src="img/test-img-gorizontal.png" alt=""> -->
+                                    <!-- <iframe src="" frameborder="0"></iframe> -->
+                                    <div class="download-img">
+                                        <input type="file" name="photo" accept="image/*,image/jpeg" />
+                                    </div>
+                                    <div class="download-video" data-toggle="modal" data-target="#modal-download"></div>
+                                </div>
+                                <p class="innerText" contenteditable="true">Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса. Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса. Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса. Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса.</p>
+                                <ul class="innerItem">
+                                    <li class="dropdown itemSection">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Источник</span> <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Федерация бокса России</a></li>
+                                            <li><a href="#">Министерство спорта РФ</a></li>
+                                            <li><a href="#">Олимпийский комитет РФ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="pushSource">
+                                        <input type="text" size="32">
+                                    </li>
+                                </ul>
+                                <div class="content-area__submit">
+                                    <input type="submit" value="Сохранить" />
+                                    <input type="submit" value="Предосмотр" />
+                                    <input type="submit" value="Опубликовать" />
+                                </div>
+                            </div>
+                            <!-- / content-area -->
+                    </div>
+                    <!-- / content__article v3 -->
+
+					<!-- content__article v4 -->
+					<div class="content__article templateVers4">
+    <div class="buton-removeArticle"></div>
+    <div class="indicateStatus">
+        <div class="status archive">Черновик</div>
+        <div class="status draft">Опубликуется:</div>
+    </div>
+    <!-- begin form -->
+    <form action="">
+        <div class="content-area">
+            <!-- <div class="controlPanel-right">
+                                    <div class="controlPanel-right__item">З</div>
+                                    <div class="controlPanel-right__item">Ж</div>
+                                    <div class="controlPanel-right__item">К</div>
+                                    <div class="controlPanel-right__item">Ч</div>
+                                    <div class="controlPanel-right__item"></div>
+                                    <div class="controlPanel-right__item"></div>
+                                </div> -->
+            <div class="content-area__date">
+                <input type="datetime" value="28/05/2017" size="10">
+                <span class="category">Новости, Всероссийские турниры, Регионы</span>
+            </div>
+            <div class="content-area__title-area">
+                <h1 contenteditable="true">
+                                    В Оренбурге готовятся провести Чемпионат России по боксу
+                                    </h1>
+            </div>
+            <p class="innerText" contenteditable="true">
+                Оренбургская область впервые в истории региона встретит участников и гостей Чемпионата России по боксу среди мужчин. Соревнования состоятся с 22 по 29 ноября в большом зале спортивно-культурного комплекса «Оренбуржье».
+                <br>
+                <br> Протокол За восемь соревновательных дней канаты оренбургского ринга перешагнут около 300 участников со всех субъектов Российской Федерации. Это чемпионы России, Европы, мира, участники Олимпийских игр. Оренбургскую область представят сильнейшие боксёры Орска, Новотроицка, Бузулука и Оренбурга. — Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса</p>
+            <div class="wrappImg">
+                <div class="content-area__photo-leftTop">
+                    <div class="control-panel">
+                        <div class="transitButton"></div>
+                        <div class="removeButton"></div>
+                        <!-- <div class="redactButton"></div> -->
+                    </div>
+                    <input type="file" name="photo" accept="image/*,image/jpeg" />
+                    <!-- <img src="img/test-img.png" alt=""> -->
+                </div>
+                <div class="content-area__photo-leftTop">
+                    <div class="control-panel">
+                        <div class="transitButton"></div>
+                        <div class="removeButton"></div>
+                        <!-- <div class="redactButton"></div> -->
+                    </div>
+                    <input type="file" name="photo" accept="image/*,image/jpeg" />
+                    <!-- <img src="img/test-img.png" alt=""> -->
+                </div>
+            </div>
+            <p class="innerText" contenteditable="true">Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса. Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса. Оренбуржцам представится возможность стать свидетелями красивых боев и бескомпромиссных побед, а также наблюдать за рождением новых звезд российского бокса. </p>
+            <ul class="innerItem">
+                <li class="dropdown itemSection">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Источник</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Федерация бокса России</a></li>
+                        <li><a href="#">Министерство спорта РФ</a></li>
+                        <li><a href="#">Олимпийский комитет РФ</a></li>
+                    </ul>
+                </li>
+                <li class="pushSource">
+                    <input type="text" size="32">
+                </li>
+            </ul>
+            <div class="content-area__submit">
+                <input type="submit" value="Сохранить" />
+                <input type="submit" value="Предосмотр" />
+                <input type="submit" value="Опубликовать" />
+            </div>
+        </div>
+        <!-- / content-area -->
+</div>
+					<!-- / content__article v4 -->
+
+
+                </div><!-- / content -->
+            </div><!-- mainContent -->
+        </div><!-- / main -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal-download" tabindex="-1" role="dialog" aria-labelledby="modal-downloadLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="downoadVideo">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h2>Загрузить видео</h2>
+                            <form action="">
+                                <p class="wrappInput">
+                                    <span class="label-url">Вставьте URL </span>
+                                    <input id="move-url" type="url" class="url-remove" />
+                                </p>
+                                <input class="submitURL" type="submit" value="Вставить видео" />
+                                <div class="downoadVideo__videoFrame"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- jQuery UI -->
+        <script src="js/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <!-- start custom js -->
+        <script src="js/start.js"></script>
+    </div>
+    <!-- wrapper -->
+</body>
+
+</html>
