@@ -1098,6 +1098,12 @@ textarea.textarea{
 
 .modal_add_human{
 	padding: 30px 30px 5px;
+	.item_dropdown{
+		display: block;
+		width: 100%;
+		font-family: "GothamProMedium";
+		font-size: 14px;
+	}
 	.images{
 		overflow: hidden;
 		margin-bottom: 15px;
@@ -1707,4 +1713,144 @@ button.btn_more{
 }
 .btn_center{
 	margin: 0 auto;
+}
+
+.doc_developments{
+	.flex_sb{
+		font-size: 14px;
+		input{
+			font-size: 14px;
+		}
+
+		div{
+			&:nth-child(1){
+				width: 145px;
+			}
+			&:nth-child(2){
+				width: 120px;
+			}
+			&:nth-child(3){
+				width: 95px;
+			}
+			&:nth-child(4){
+				width: 120px;
+			}
+			&:nth-child(5){
+				width: 75px;
+
+				input{
+					background-image: url('../img/rocet.png');
+					background-repeat: no-repeat;
+					background-position: top 1px right;
+				}
+			}
+		}
+	}
+}
+.doc_developments_add .flex_sb div{
+	&:nth-child(1){
+		width: 170px;
+	}
+	&:nth-child(2){
+		width: 100px;
+	}
+	&:nth-child(3){
+		width: 100px;
+	}
+	&:nth-child(4){
+		width: 125px;
+	}
+	&:nth-child(5){
+		width: 85px;
+	}
+}
+
+.content_docs{
+	width: 530px;
+	padding: 20px;
+	background: #fff;
+	margin-bottom: 8px;
+
+	h3{
+		color: #4e8acd;
+		font-size: 18px;
+		font-family: "GothamProBold";
+		margin: 0 15px 30px;
+	}
+	.btn_more{
+		height: 34px;
+		line-height: 31px;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.content_docs_add{
+	padding: 30px 20px;
+}
+.add_docs{
+	overflow: hidden;
+	line-height: 43px;
+	font-family: "GothamProBold";
+	color: #363636;
+	font-size: 18px;
+	&:hover{
+		color: #000;
+	}
+	img{
+		float: left;
+		margin-right: 14px;
+	}
+}
+.developments_table{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 15px;
+	thead{
+		tr td{
+			font-family: "GothamProBold";
+			padding-bottom: 0;
+			padding-top: 0;
+		}
+	}
+	tr{
+		td{
+			padding: 15px 6px;
+			font-size: 12px;
+			vertical-align: top;
+			border-bottom: 1px solid #949494;
+			&:first-child{
+				padding-left: 0;
+				width: 38px;
+			}
+			&:last-child{
+				padding-right: 0;
+				width: 120px;
+				a{
+					margin-right: 5px;
+				}
+			}
+			&:nth-child(3){
+				width: 90px;
+			}
+			span{
+				display: block;
+				text-transform: uppercase;
+				background-color: #4e8acd;
+				color: #fff;
+				text-align: center;
+				margin-bottom: 5px;
+			}
+		}
+	}
+	tr:last-child td{
+		border-bottom: none;
+	}
+}
+.developments_table_second tr td:last-child{
+	width: 90px;
+	a{
+		margin-right: 3px;
+	}
 }

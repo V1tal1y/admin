@@ -101,7 +101,7 @@ $('.plus2').click(function(){
     $('.modal_add').css('top', scroll_top);
 })
 
-$('.content_center .dropdown li a').click(function(){
+$('.content_center .dropdown li a, .item_dropdown li, .item_dropdown li a').click(function(){
     $(this).parents('.dropdown').find('.dropdown-toggle').html($(this).text()+'<b class="caret"></b>')
     $(this).parents('.dropdown').removeClass('open');
    return false;

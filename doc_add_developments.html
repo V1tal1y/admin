@@ -106,11 +106,19 @@
 	        <!-- Content  -->
 	        <div class="mainContent">
 
-	            <div class="filter_panel doc_developments doc_developments_add">
-	                <h2>Добавить документ «Судейские отчеты»</h2>
+	            <div class="filter_panel doc_developments">
+	                <h2>Добавление документов «Вызовы»</h2>
 	                <div class="flex_sb">
 	                	<div><input type="text" value="Мероприятие" class="input"></div>
 	                	<div class="dropdown dropdown_doc item_dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Тип вызова <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+					            <li><a href="#">Действие</a></li>
+					            <li><a href="#">Другое действие</a></li>
+					            <li><a href="#">Что-то еще</a></li></li>
+					         </ul>
+						</div>
+						<div class="dropdown dropdown_doc item_dropdown">
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Округ <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 					            <li><a href="#">Действие</a></li>
@@ -119,14 +127,13 @@
 					         </ul>
 						</div>
 						<div class="dropdown dropdown_doc item_dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Судья <b class="caret"></b></a>
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Команда<b class="caret"></b></a>
 							<ul class="dropdown-menu">
 					            <li><a href="#">Действие</a></li>
 					            <li><a href="#">Другое действие</a></li>
 					            <li><a href="#">Что-то еще</a></li></li>
 					         </ul>
 						</div>
-						<div></div>
 	                	<div><input type="text" class="input"></div>
 	                </div>
 						
@@ -137,33 +144,15 @@
 	            	<a href="#" class="add_docs"><img src="img/document.png" alt=""> Добавить документ</a>
 	            </div>
 	            <div class="content_docs">
-	            	<h3>Судейские отчеты</h3>
-					<table class="developments_table developments_table_second">
-						<thead>
-							<tr>
-								<td></td>
-								<td>Наименование</td>
-								<td>Дата</td>
-								<td>Место</td>
-							</tr>
-						</thead>
+	            	<h3>Вызовы</h3>
+					<table class="developments_table">
 						<tr>
 							<td><img src="img/doc_pl.png" alt=""></td>
 							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
 							<td>01.10 - 05.10 2014 г.</td>
 							<td>
-								Россия Саранск <br>
-								<a href="#"><img src="img/edit.png" alt=""></a>
-		                		<a href="#"><img src="img/look.png" alt=""></a>
-		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
-							</td>
-						</tr>
-						<tr>
-							<td><img src="img/doc_pdf.png" alt=""></td>
-							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
-							<td>01.10 - 05.10 2014 г.</td>
-							<td>
-								Россия Саранск <br>
+								ХМАО-Югра, Нижневартовский район, шт. Излучинск
+								<span>Соревнования</span>
 								<a href="#"><img src="img/edit.png" alt=""></a>
 		                		<a href="#"><img src="img/look.png" alt=""></a>
 		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
@@ -174,18 +163,8 @@
 							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
 							<td>01.10 - 05.10 2014 г.</td>
 							<td>
-								Россия Саранск <br>
-								<a href="#"><img src="img/edit.png" alt=""></a>
-		                		<a href="#"><img src="img/look.png" alt=""></a>
-		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
-							</td>
-						</tr>
-						<tr>
-							<td><img src="img/doc_pdf.png" alt=""></td>
-							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
-							<td>01.10 - 05.10 2014 г.</td>
-							<td>
-								Россия Саранск <br>
+								ХМАО-Югра, Нижневартовский район, шт. Излучинск
+								<span>Соревнования</span>
 								<a href="#"><img src="img/edit.png" alt=""></a>
 		                		<a href="#"><img src="img/look.png" alt=""></a>
 		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
@@ -196,7 +175,8 @@
 							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
 							<td>01.10 - 05.10 2014 г.</td>
 							<td>
-								Россия Саранск <br>
+								ХМАО-Югра, Нижневартовский район, шт. Излучинск
+								<span>Соревнования</span>
 								<a href="#"><img src="img/edit.png" alt=""></a>
 		                		<a href="#"><img src="img/look.png" alt=""></a>
 		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
@@ -207,7 +187,8 @@
 							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
 							<td>01.10 - 05.10 2014 г.</td>
 							<td>
-								Россия Саранск <br>
+								ХМАО-Югра, Нижневартовский район, шт. Излучинск
+								<span>Соревнования</span>
 								<a href="#"><img src="img/edit.png" alt=""></a>
 		                		<a href="#"><img src="img/look.png" alt=""></a>
 		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
@@ -218,7 +199,8 @@
 							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
 							<td>01.10 - 05.10 2014 г.</td>
 							<td>
-								Россия Саранск <br>
+								ХМАО-Югра, Нижневартовский район, шт. Излучинск
+								<span>Соревнования</span>
 								<a href="#"><img src="img/edit.png" alt=""></a>
 		                		<a href="#"><img src="img/look.png" alt=""></a>
 		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
@@ -229,7 +211,8 @@
 							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
 							<td>01.10 - 05.10 2014 г.</td>
 							<td>
-								Россия Саранск <br>
+								ХМАО-Югра, Нижневартовский район, шт. Излучинск
+								<span>Соревнования</span>
 								<a href="#"><img src="img/edit.png" alt=""></a>
 		                		<a href="#"><img src="img/look.png" alt=""></a>
 		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
@@ -240,7 +223,8 @@
 							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
 							<td>01.10 - 05.10 2014 г.</td>
 							<td>
-								Россия Саранск <br>
+								ХМАО-Югра, Нижневартовский район, шт. Излучинск
+								<span>Соревнования</span>
 								<a href="#"><img src="img/edit.png" alt=""></a>
 		                		<a href="#"><img src="img/look.png" alt=""></a>
 		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
@@ -251,7 +235,32 @@
 							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
 							<td>01.10 - 05.10 2014 г.</td>
 							<td>
-								Россия Саранск <br>
+								ХМАО-Югра, Нижневартовский район, шт. Излучинск
+								<span>Соревнования</span>
+								<a href="#"><img src="img/edit.png" alt=""></a>
+		                		<a href="#"><img src="img/look.png" alt=""></a>
+		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="img/doc_pl.png" alt=""></td>
+							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
+							<td>01.10 - 05.10 2014 г.</td>
+							<td>
+								ХМАО-Югра, Нижневартовский район, шт. Излучинск
+								<span>Соревнования</span>
+								<a href="#"><img src="img/edit.png" alt=""></a>
+		                		<a href="#"><img src="img/look.png" alt=""></a>
+		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="img/doc_pl.png" alt=""></td>
+							<td>Всероссийские соревнования класса "А" "Турнир на призы депутата Государственной Думы Федерального собрания РФ, народного артиста СССР, профессора И.Д. Кобзона"</td>
+							<td>01.10 - 05.10 2014 г.</td>
+							<td>
+								ХМАО-Югра, Нижневартовский район, шт. Излучинск
+								<span>Соревнования</span>
 								<a href="#"><img src="img/edit.png" alt=""></a>
 		                		<a href="#"><img src="img/look.png" alt=""></a>
 		                		<a href="#"><img src="img/del_f.svg" alt=""></a>
