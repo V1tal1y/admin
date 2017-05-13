@@ -1528,6 +1528,9 @@ button.btn_more{
 			padding-top: 0;
 		}
 	}
+	tr:first-child td{
+		padding-top: 0;
+	}
 	tr{
 		td{
 			padding: 15px 6px;
@@ -1566,5 +1569,51 @@ button.btn_more{
 	width: 90px;
 	a{
 		margin-right: 3px;
+	}
+}
+
+
+.content_docs_calendar{
+	.in_calendar{
+		display: block;
+		color: #37669d;
+		font-size: 10px;
+		&:before{
+			content: '';
+			display: inline-block;
+			width: 7px;
+			height: 7px;
+			background-color: #00ff00;
+			border-radius: 100%;
+			margin-right: 4px;
+		}
+	}
+	p{
+		font-size: 18px;
+		font-family: "GothamProBold";
+
+		span{
+			background: #F24941;
+			color: #fff;
+			font-family: "GothamProRegular";
+			font-size: 12px;
+			text-transform: uppercase;
+			padding: 0 3px;
+		}
+	}
+	.about_event{
+		display: flex;
+		justify-content: space-between;
+		font-size: 16px;
+
+		div{
+			width: 220px;
+		}
+		b{
+			font-size: 18px;
+			font-family: "GothamProBold";
+			display: block;
+			padding-bottom: 8px;
+		}
 	}
 }

@@ -1281,6 +1281,8 @@ button.btn_more {
     font-family: "GothamProBold";
     padding-bottom: 0;
     padding-top: 0; }
+  .developments_table tr:first-child td {
+    padding-top: 0; }
   .developments_table tr td {
     padding: 15px 6px;
     font-size: 12px;
@@ -1310,3 +1312,46 @@ button.btn_more {
   width: 90px; }
   .developments_table_second tr td:last-child a {
     margin-right: 3px; }
+
+.content_docs_calendar .in_calendar {
+  display: block;
+  color: #37669d;
+  font-size: 10px; }
+  .content_docs_calendar .in_calendar:before {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #00ff00;
+    -webkit-border-radius: 100%;
+            border-radius: 100%;
+    margin-right: 4px; }
+
+.content_docs_calendar p {
+  font-size: 18px;
+  font-family: "GothamProBold"; }
+  .content_docs_calendar p span {
+    background: #F24941;
+    color: #fff;
+    font-family: "GothamProRegular";
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 3px; }
+
+.content_docs_calendar .about_event {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px; }
+  .content_docs_calendar .about_event div {
+    width: 220px; }
+  .content_docs_calendar .about_event b {
+    font-size: 18px;
+    font-family: "GothamProBold";
+    display: block;
+    padding-bottom: 8px; }
