@@ -1463,6 +1463,15 @@ button.btn_more {
   .popap h2 {
     font-size: 28px;
     margin: 0; }
+  .popap .close {
+    background: url("img/close.svg") center no-repeat;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 11px;
+    height: 11px; }
+  .popap .btn_more {
+    height: 40px; }
 
 .popap_download {
   width: 900px;
@@ -1502,8 +1511,6 @@ button.btn_more {
       font-weight: normal; }
     .popap_download .right textarea {
       height: 90px; }
-    .popap_download .right .btn_more {
-      height: 40px; }
   .popap_download .title {
     font-size: 16px;
     margin-bottom: 9px; }
@@ -1565,3 +1572,70 @@ button.btn_more {
     position: absolute;
     top: 10px;
     right: 3px; }
+
+.dropdown_select {
+  border: 1px solid #CDCDCD;
+  display: block;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E9E9E9), to(#fff));
+  background: -webkit-linear-gradient(top, #E9E9E9, #fff);
+  background: linear-gradient(180deg, #E9E9E9, #fff); }
+  .dropdown_select a {
+    color: #575757;
+    font-size: 14px;
+    display: block;
+    padding: 4px 10px; }
+    .dropdown_select a:hover, .dropdown_select a:focus {
+      text-decoration: none; }
+      .dropdown_select a:hover a, .dropdown_select a:hover a:hover, .dropdown_select a:focus a, .dropdown_select a:focus a:hover {
+        text-decoration: none; }
+  .dropdown_select .caret {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    display: block;
+    background: none;
+    border: none;
+    height: 19px; }
+    .dropdown_select .caret:before, .dropdown_select .caret:after {
+      content: '';
+      display: block;
+      position: relative;
+      position: absolute;
+      right: 0; }
+    .dropdown_select .caret:before {
+      top: 3px;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 4px 6px 4px;
+      border-color: transparent transparent #555555 transparent; }
+    .dropdown_select .caret:after {
+      bottom: 0;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6.9px 4px 0 4px;
+      border-color: #555555 transparent transparent transparent; }
+
+.popap_edit {
+  padding: 30px;
+  font-family: "GothamProMedium";
+  width: 400px;
+  margin-left: -200px; }
+  .popap_edit p {
+    margin-bottom: 10px; }
+  .popap_edit .input {
+    font-weight: normal;
+    display: block;
+    padding: 0 10px 1px;
+    margin-top: 3px;
+    width: 340px; }
+  .popap_edit .item_dropdown {
+    font-family: "GothamProRegular";
+    margin: 2px 0 15px; }
+    .popap_edit .item_dropdown a {
+      padding: 0 10px; }

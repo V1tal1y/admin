@@ -1750,6 +1750,17 @@ button.btn_more{
 		font-size: 28px;
 		margin: 0;
 	}
+	.close{
+		background: url('img/close.svg') center no-repeat;
+		position: absolute;
+		top: 7px;
+		right: 7px;
+		width: 11px;
+		height: 11px;
+	}
+	.btn_more{
+		height: 40px;
+	}
 }
 .popap_download{
 	width: 900px;
@@ -1804,9 +1815,6 @@ button.btn_more{
 		}
 		textarea{
 			height: 90px;
-		}
-		.btn_more{
-			height: 40px;
 		}
 	}
 	.title{
@@ -1876,5 +1884,85 @@ button.btn_more{
 		position: absolute;
 		top: 10px;
 		right: 3px;
+	}
+}
+
+.dropdown_select{
+	border: 1px solid #CDCDCD;
+	display: block;
+	border-radius: 3px;
+	background: linear-gradient(180deg, #E9E9E9, #fff);
+	a{
+		color: #575757;
+		font-size: 14px;
+		display: block;
+		padding: 4px 10px;
+
+		&:hover, &:focus{
+			text-decoration: none;
+			a, a:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	.caret{
+		position: absolute;
+		top: 2px;
+		right: 5px;
+		display: block;
+		background: none;
+		border: none;
+		height: 19px;
+		&:before, &:after{
+			content: '';
+			display: block;
+			position: relative;
+			position: absolute;
+			right: 0;
+		}
+		&:before{
+			top: 3px;
+		    display: inline-block;
+		    width: 0;
+		    height: 0;
+		    border-style: solid;
+		    border-width: 0 4px 6px 4px;
+		    border-color: transparent transparent #555555 transparent;
+		}
+		&:after{
+			bottom: 0;
+		    display: inline-block;
+		    width: 0;
+		    height: 0;
+		    border-style: solid;
+		    border-width: 6.9px 4px 0 4px;
+		    border-color: #555555 transparent transparent transparent;
+		}
+	}	
+}
+
+.popap_edit{
+	padding: 30px;
+	font-family: "GothamProMedium";
+	width: 400px;
+	margin-left: -200px;
+	
+	p{
+		margin-bottom: 10px;
+	}
+	.input{
+		font-weight: normal;
+		display: block;
+		padding: 0 10px 1px;
+		margin-top: 3px;
+		width: 340px;
+	}
+	.item_dropdown{
+		font-family: "GothamProRegular";
+		margin: 2px 0 15px;
+
+		a{
+			padding: 0 10px;
+		}
 	}
 }
