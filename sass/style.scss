@@ -849,6 +849,7 @@ textarea.textarea{
 	background:rgba(0,0,0,0.7);
 	position: fixed;
 	display: none;
+	z-index: 2;
 }
 .close_modal{
 	position: absolute;
@@ -1727,5 +1728,153 @@ button.btn_more{
 		&:last-child{
 			float: right;
 		}
+	}
+}
+
+.popap_modal{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: relative;
+	z-index: 6;
+}
+.popap{
+	position: relative;
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	background: #fff;
+
+	h2{
+		font-size: 28px;
+		margin: 0;
+	}
+}
+.popap_download{
+	width: 900px;
+	margin-left: -450px;
+
+	h2{
+		padding: 20px 30px;
+	}
+	.popap_content{
+		padding: 15px 30px 25px;
+		border-top: 1px solid #ccc;
+
+		&:after{
+			display: block;
+			content: '';
+			clear: both;
+		}
+	}
+	.left{
+		float: left;
+		width: 300px;
+
+		.name{
+			font-size: 18px;
+		}
+		span{
+			font-size: 9px;
+		}
+		iframe{
+			margin-left: -3px;
+		}
+	}
+	.right{
+		width: 480px;
+		float: right;
+		font-weight: bold;
+
+		.input{
+			width: 100%;
+			display: block;
+			margin-top: 3px;
+		}
+		.data_inp{
+			width: 20%;
+		}
+		label{
+			display: block;
+			margin-bottom: 12px;
+		}
+		input{
+			font-weight: normal;
+		}
+		textarea{
+			height: 90px;
+		}
+		.btn_more{
+			height: 40px;
+		}
+	}
+	.title{
+		font-size: 16px;
+		margin-bottom: 9px;
+		.btn_select{
+			margin-left: 30px;
+		}
+	}
+}
+.size_doc{
+	background: #EFEFEF;
+	border: 1px solid #CDCDCD;
+	color: #ACACAC;
+	display: block;
+	width: 100%;
+	padding: 0 10px;
+	font-size: 12px;
+	margin-top: 2px;
+}
+.input_dashed{
+	border: 1px dashed #CDCDCD;
+	margin-top: 3px;
+	display: block;
+	width: 100%;
+	height: 30px;
+}
+.btn_select{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #2778AD;
+	border: 1px solid #216897;
+	border-radius: 3px;
+	color: #fff;
+	text-align: center;
+	line-height: .9;
+	font-size: 14px;
+	margin-left: 15px;
+
+	&:hover{
+		text-decoration: none;
+		color: #fff;
+		background: #216897;
+	}
+}
+.selects{
+	font-size: 0;
+	margin-bottom: 20px;
+}
+.select_dropdown{
+	display: inline-block;
+	width: 28%;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	padding: 2px 8px;
+	position: relative;
+	color: #000;
+
+	a{
+		color: #000;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.caret{
+		position: absolute;
+		top: 10px;
+		right: 3px;
 	}
 }
