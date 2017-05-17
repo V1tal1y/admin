@@ -106,49 +106,65 @@
 	        <!-- Content  -->
 	        <div class="mainContent">
 
-	            <div class="grey_title">
-	                Прямая трансляция <a href="#"><img src="img/edit.png" alt=""></a>
+	            <div class="filter_panel">
+	                <h2>Редактирование текста</h2>
+					<div class="dropdown dropdown_doc item_dropdown">
+						 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Выбор раздела <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+				            <li><a href="#">Действие</a></li>
+				            <li><a href="#">Другое действие</a></li>
+				            <li><a href="#">Что-то еще</a></li></li>
+				         </ul>
+					</div>
 	            </div>
 
 	            <!-- content -->
 	            <div class="content">
 	                <div class="content_center">
-	                	<div class="online">
-	                		<div class="online_main">
-	                			Онлайн
-	                			<input class="input" type="text" value="URL">
-	                		</div>
-		                	<ul>
-		                		<li>
-			                		<b>Видео 1</b>
-			                		<input type="text" class="input" value="https://www.minsport.gov.ru">
+	                	<div class="requisites">
+	                		<h2>Реквизиты</h2>
+	                		<label for="nem1">Юридический адрес:</label>
+	                		<input type="text" name="nem1" value="119922 г. Москва. Лужнецкая набережная, д. 8">
+	                		<ul class="main_requisites">
+	                			<li>
+		                			<b>ОГРН:</b>
+		                			<span><input type="text" value="027739824815"></span>
 		                		</li>
-		                		<li>
-			                		<b>Видео 2</b>
-			                		<input type="text" class="input" value="https://www.minsport.gov.ru">
+	                			<li>
+		                			<b>ИНН:</b>
+		                			<span><input type="text" value="7704112419"></span>
 		                		</li>
-		                		<li>
-			                		<b>Видео 3</b>
-			                		<input type="text" class="input" value="https://www.minsport.gov.ru">
+	                			<li>
+		                			<b>КПП:</b>
+		                			<span><input type="text" value="770401001"></span>
 		                		</li>
-		                		<li>
-			                		<b>Видео 4</b>
-			                		<input type="text" class="input" value="https://www.minsport.gov.ru">
+	                			<li>
+		                			<b>ОКПО:</b>
+		                			<span><input type="text" value="17857070"></span>
 		                		</li>
-		                		<li>
-			                		<b>Видео 5</b>
-			                		<input type="text" class="input" value="https://www.minsport.gov.ru">
+	                		</ul>
+	                		Банковские реквизиты
+	                		<ul>
+	                			<li>
+		                			<b>р/с:</b>
+		                			<span><input type="text" value=" 40703810500000000703"></span>
 		                		</li>
-		                		<li>
-			                		<b>Видео 6</b>
-			                		<input type="text" class="input" value="https://www.minsport.gov.ru">
+	                			<li>
+		                			<b>Банк</b>
+		                			<span><input type="text" value="ВТБ 24 (ЗАО) в г. Москве"></span>
 		                		</li>
-		                	</ul>
-		                	<div class="btns">
-		                		<input type="submit" value="Отмена"  class="btn_grey">
-		                		<input type="submit" value="Опубликовать" class="btn_grey">
-		                	</div>
-	                	</div>
+	                			<li>
+		                			<b>к/с:</b>
+		                			<span><input type="text" value="30101810100000000716"></span>
+		                		</li>
+	                			<li>
+		                			<b>БИК:</b>
+		                			<span><input type="text" value="044525716"></span>
+		                		</li>
+	                		</ul>
+	                		<br>
+	                		<input type="submit" class="btn_blue" value="Отмена">
+	                		<input type="submit" class="btn_blue" value="Опубликовать">
 	                </div>
 	            </div><!-- / content -->
 

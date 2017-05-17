@@ -1973,3 +1973,120 @@ button.btn_more{
 		}
 	}
 }
+
+
+
+.requisites{
+	font-size: 18px;
+	h2{
+		font-size: 21px;
+		margin: 0 0 20px;
+		padding: 0;
+	}
+	ul{
+		display: table;
+		width: 275px;
+		margin: 5px 0 7px;
+		padding: 0;
+		li{
+			display: table-row;
+
+			span{
+				display: table-cell;
+				width: 166px;
+				padding: 2px 0;
+			}
+		}
+		&.main_requisites{
+			width: 382px;
+			span{
+				width: 272px;
+			}
+		}
+	}
+	b{
+		font-size: 16px;
+		display: table-cell;
+		width: 110px;
+		font-family: "GothamProBold";
+		padding: 2px 0;
+	}
+	label{
+		font-family: "GothamProBold";
+		font-size: 16px;
+	}
+	input[type=text]{
+		display: block;
+		width: 100%;
+		padding: 0 10px;
+		height: 32px;
+		border: 1px dashed #949494;
+	}
+}
+.btn_blue, .btn_grey{
+	font-size: 14px;
+	color: #363636;
+	width: 149px;
+	height: 38px;
+	border: 2px solid #168ecf;
+	margin-right: 10px;
+	&:hover{
+		color: #fff;
+		background: #168ecf;
+	}
+}
+.btn_grey{
+	border: 1px solid #949494;
+	&:hover{
+		background: #949494;
+	}
+}
+
+
+
+
+
+.grey_title{
+	padding: 25px 30px;
+	background-color: #e1dede;
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+
+
+
+.online{
+	font-size: 14px;
+	font-weight: bold;
+
+	input{
+		font-weight: normal;
+	}
+	.input{
+		width: 100%;
+		margin-top: 5px;
+	}
+	.online_main{
+		width: 426px;
+		
+	}
+	ul{
+		padding: 30px 30px 0;
+		width: 100%;
+		box-sizing: content-box;
+		margin-left: -30px;
+		list-style: none;
+		li{
+			width: 33%;
+			float: left;
+			padding: 0 2% 35px 0;
+		}
+	}
+	.btns{
+		text-align: right;
+	}
+	.btn_grey{
+		margin-right: 0;
+		margin-left: 15px;
+	}
+}
