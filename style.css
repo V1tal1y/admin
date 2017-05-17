@@ -1686,7 +1686,8 @@ button.btn_more {
   width: 149px;
   height: 38px;
   border: 2px solid #168ecf;
-  margin-right: 10px; }
+  margin-right: 10px;
+  background: none; }
   .btn_blue:hover, .btn_grey:hover {
     color: #fff;
     background: #168ecf; }
@@ -1723,8 +1724,80 @@ button.btn_more {
       width: 33%;
       float: left;
       padding: 0 2% 35px 0; }
-  .online .btns {
-    text-align: right; }
-  .online .btn_grey {
+
+.btns_r {
+  text-align: right; }
+  .btns_r .btn_grey {
     margin-right: 0;
     margin-left: 15px; }
+
+.partners h2 {
+  margin: 0;
+  padding: 0 0 20px;
+  font-size: 21px; }
+
+.partners ul {
+  padding: 0;
+  list-style: none;
+  width: 103%; }
+  .partners ul:after {
+    display: block;
+    clear: both;
+    content: ''; }
+  .partners ul li {
+    width: 33%;
+    float: left;
+    height: 191px;
+    border: 1px solid #949494;
+    padding: 10px; }
+  .partners ul .input {
+    font-size: 14px; }
+
+.partners .btns_r {
+  margin-right: -2%;
+  padding-top: 20px; }
+
+.partners .top_input {
+  width: 131px;
+  height: 131px;
+  border: 1px dashed #949494;
+  -webkit-border-radius: 1px;
+          border-radius: 1px;
+  margin-bottom: 15px;
+  position: relative; }
+  .partners .top_input input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer; }
+  .partners .top_input .edit,
+  .partners .top_input .del {
+    position: absolute;
+    top: 6px;
+    right: 28px;
+    width: 15px;
+    height: 18px;
+    background: url("img/edit.png") center no-repeat; }
+  .partners .top_input .del {
+    right: 5px;
+    background: url("img/basket.png") center no-repeat; }
+  .partners .top_input.null {
+    background-color: #3a4e65;
+    border: 1px solid #3a4e65; }
+    .partners .top_input.null .edit {
+      background: url("img/edet_w.png") center no-repeat; }
+    .partners .top_input.null .del {
+      background: url("img/control-remove.png") center no-repeat; }
+
+.link_add {
+  font-size: 14px;
+  overflow: hidden;
+  line-height: 38px;
+  cursor: pointer; }
+  .link_add img {
+    float: left;
+    margin-right: 10px; }
+  .link_add:hover {
+    text-decoration: underline; }
