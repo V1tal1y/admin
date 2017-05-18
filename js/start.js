@@ -107,6 +107,8 @@ $('.content_center .dropdown li a, .item_dropdown li, .item_dropdown li a').clic
    return false;
 })
 
+    $( ".partners ul" ).sortable();
+    $( ".partners ul" ).disableSelection();
 
 
 
