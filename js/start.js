@@ -87,8 +87,8 @@ $('.currentShow').css({"opacity":"1"});
 
 
 //modal rucovadstvo
-$('.close_modal, .shadow').click(function(){
-    $('.modal_add, .shadow').fadeOut();
+$('.close_modal, .shadow, .close').click(function(){
+    $('.modal_add, .shadow, .popap').fadeOut();
 })
 $('.plus1').click(function(){
     $('.modal_add_group, .shadow').fadeIn();
@@ -107,9 +107,30 @@ $('.content_center .dropdown li a, .item_dropdown li, .item_dropdown li a').clic
    return false;
 })
 
-    $( ".partners ul" ).sortable();
-    $( ".partners ul" ).disableSelection();
+$( ".partners ul, .admin_contact ul" ).sortable();
+$( ".partners ul, .admin_contact ul" ).disableSelection();
 
+$('.admin_contact .edit').click(function(){
+    $('.admin_popap, .shadow').fadeIn();
+    scroll_top = $(window).scrollTop() - $('.content_center').scrollTop() - $(window).height()/5 + 'px';
+    $('.admin_popap').css('top', scroll_top);
+    return false;
+});
+
+var curr_li, prev_li;
+
+$('.admin_contact li .btn_up').click(function(){
+    curr_li = $(this).parents('li').prev();
+    prev_li = $(curr_li).prev();
+    prev_li.insertAfter(curr_li);
+    return false;
+});
+$('.admin_contact li .btn_down').click(function(){
+    curr_li = $(this).parents('li');
+    next_li = $(curr_li).next();
+    next_li.insertBefore(curr_li);
+    return false;
+});
 
 
 }); // end ready

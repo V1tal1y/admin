@@ -1802,3 +1802,126 @@ button.btn_more {
     margin-right: 10px; }
   .link_add:hover {
     text-decoration: underline; }
+
+.admin_contact ul {
+  padding: 20px 0 0;
+  list-style: none; }
+
+.admin_contact li {
+  padding: 18px 25px;
+  border: 1px solid #acacac;
+  margin-bottom: 8px;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  background: #fff; }
+
+.admin_contact .edit {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  background: url("img/edit.png") center no-repeat;
+  width: 14px;
+  height: 18px;
+  margin-top: -9px; }
+  .admin_contact .edit:hover {
+    opacity: 0.8; }
+
+.admin_contact .arrow {
+  height: 24px;
+  width: 9px;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  margin-top: -12px; }
+  .admin_contact .arrow a {
+    position: absolute;
+    left: 0;
+    display: block; }
+    .admin_contact .arrow a:first-child {
+      top: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 4.5px 9px 4.5px;
+      border-color: transparent transparent #a0a0a0 transparent; }
+      .admin_contact .arrow a:first-child:hover {
+        border-color: transparent transparent #848484 transparent; }
+    .admin_contact .arrow a:last-child {
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 9px 4.5px 0 4.5px;
+      border-color: #a0a0a0 transparent transparent transparent; }
+      .admin_contact .arrow a:last-child:hover {
+        border-color: #848484 transparent transparent transparent; }
+
+.admin_popap {
+  position: absolute;
+  width: 700px;
+  padding: 25px 30px 30px;
+  left: 0;
+  z-index: 6;
+  background-color: #e1dede;
+  display: none; }
+  .admin_popap .top {
+    font-size: 16px; }
+    .admin_popap .top label {
+      display: table; }
+    .admin_popap .top b, .admin_popap .top span {
+      display: table-cell;
+      padding: 4px 0;
+      font-weight: normal; }
+    .admin_popap .top span {
+      width: 100%;
+      padding-left: 5px; }
+  .admin_popap .contact_info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 14px;
+    margin: 5px 0 15px; }
+    .admin_popap .contact_info p {
+      position: relative; }
+    .admin_popap .contact_info h3 {
+      margin: 0;
+      padding: 10px 0;
+      font-size: 16px; }
+    .admin_popap .contact_info b {
+      font-weight: normal;
+      display: inline-block;
+      width: 70px; }
+    .admin_popap .contact_info .left {
+      width: 50%; }
+      .admin_popap .contact_info .left:first-child {
+        padding-right: 10px; }
+      .admin_popap .contact_info .left:last-child {
+        padding-left: 10px;
+        margin-left: -10px;
+        border-left: 1px solid #484848; }
+      .admin_popap .contact_info .left input {
+        width: 193px;
+        color: #363636;
+        padding: 0 5px;
+        height: 34px;
+        border: 1px dashed #949494; }
+      .admin_popap .contact_info .left .plus {
+        right: 7px; }
+
+.plus {
+  position: absolute;
+  right: 0;
+  margin-top: -11px;
+  top: 50%;
+  width: 22px;
+  cursor: pointer;
+  height: 22px;
+  background: url("img/plus.png") center no-repeat; }
+  .plus:hover {
+    opacity: 0.8; }
